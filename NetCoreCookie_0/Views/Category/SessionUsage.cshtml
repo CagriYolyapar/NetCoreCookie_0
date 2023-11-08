@@ -1,0 +1,23 @@
+﻿@{
+   Category c = Context.Session.GetObject<Category>("category");
+
+   <h1>@c.CategoryId @c.CategoryName @c.Description</h1>
+}
+
+@* 
+<table>
+    <thead>
+        <tr>ID</tr>
+        <tr>Name</tr>
+    </thead>
+
+    <tbody>
+        @foreach (CartItem item in c.MyCart)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table> *@
